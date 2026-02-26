@@ -144,7 +144,7 @@ const SharedNavbar = () => {
                     href={link.href}
                     onClick={() => setIsOpen(false)}
                     className={cn(
-                      "block text-[clamp(3rem,8vw,6rem)] font-medium leading-[1.1] tracking-tight hover:pl-6 transition-all duration-500",
+                      "block text-[clamp(2rem,6vw,4.5rem)] font-medium leading-[1.1] tracking-tight hover:pl-6 transition-all duration-500",
                       isActive(link.href) && "underline underline-offset-8 decoration-1"
                     )}
                     style={{ transitionDelay: `${i * 40}ms` }}
