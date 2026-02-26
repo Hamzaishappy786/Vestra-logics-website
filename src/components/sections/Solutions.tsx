@@ -4,7 +4,7 @@ import { MagneticLine } from '../ui/MagneticLine';
 
 /**
  * Solutions Component
- * This component clones the "Our solutions" section from the Cuberto services page.
+ * This component clones the "Our solutions" section from the Vestra services page.
  * It features a clean grid layout with service names on the left, 
  * detailed descriptions on the right, and interactive "Read more" buttons.
  * The layout is separated by interactive MagneticLine dividers.
@@ -20,7 +20,7 @@ const Solutions: React.FC = () => {
         {
             id: 'mobile',
             title: 'Mobile applications',
-            description: "Cuberto doesn't do cookie-cutter solutions. Every mobile app involves stages of target audience research and prototype testing. The result? A product that’s perfectly suited to your users.",
+            description: "Vestra doesn't do cookie-cutter solutions. Every mobile app involves stages of target audience research and prototype testing. The result? A product that’s perfectly suited to your users.",
             link: '/services/mobile/'
         },
         {

@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import { VisualEditsMessenger } from "orchids-visual-edits";
 import CustomCursor from "@/components/ui/CustomCursor";
+import StickyContactWidget from "@/components/sections/sticky-contact-widget";
 
 export const metadata: Metadata = {
   title: "Vestra Logics — Design Agency",
@@ -17,6 +18,7 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning>
       <body className="antialiased overflow-x-hidden cursor-none">
         {children}
+        <StickyContactWidget />
         <CustomCursor />
         <VisualEditsMessenger />
       </body>

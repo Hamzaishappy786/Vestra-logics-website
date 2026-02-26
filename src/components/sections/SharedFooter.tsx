@@ -49,7 +49,7 @@ const SharedFooter = () => {
             {[
               { label: "Services", href: "/services" },
               { label: "Projects", href: "/projects" },
-              { label: "Workflow", href: "https://hello.cuberto.com/" },
+              { label: "Workflow", href: "#" },
               { label: "Company", href: "/about" },
               { label: "Contacts", href: "/contacts" },
             ].map((link) => (
@@ -75,7 +75,7 @@ const SharedFooter = () => {
 
           <div className="flex items-center gap-3">
             {[
-              { Icon: Instagram, href: "https://www.instagram.com/cubertodesign/", label: "Instagram" },
+              { Icon: Instagram, href: "#", label: "Instagram" },
               { Icon: Mail, href: "mailto:info@vestra.com", label: "Email" },
             ].map(({ Icon, href }, idx) => (
               <a

@@ -118,6 +118,7 @@ const ProjectCard = ({ project, index }: { project: Project; index: number }) =>
 
   // Simple parallax effect simulation
   const [offsetY, setOffsetY] = useState(0);
+  const [mounted, setMounted] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -127,6 +128,7 @@ const ProjectCard = ({ project, index }: { project: Project; index: number }) =>
         setOffsetY(scrollPercent * 30 * (index % 2 === 0 ? 1 : -1));
       }
     };
+    setMounted(true);
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   }, [index]);
@@ -158,6 +160,7 @@ const ProjectCard = ({ project, index }: { project: Project; index: number }) =>
       >
         <div className={`relative overflow-hidden rounded-[2.5rem] bg-[#1a1a1a] transition-all duration-500 ${project.size === 'small' ? 'aspect-[4/3] w-full' : 'aspect-[1/1.1] w-full'}`}>
           <div
+            key={mounted ? 'client' : 'server'}
             className="absolute inset-0 transition-transform duration-700 ease-[cubic-bezier(0.19,1,0.22,1)] group-hover:scale-105"
             suppressHydrationWarning
           >
@@ -167,6 +170,7 @@ const ProjectCard = ({ project, index }: { project: Project; index: number }) =>
               fill
               className={`object-cover transition-opacity duration-500 ${isHovered ? 'opacity-0' : 'opacity-100'}`}
               sizes="(max-width: 768px) 100vw, 50vw"
+              priority={index < 2}
             />
             {isHovered && (
               <video
