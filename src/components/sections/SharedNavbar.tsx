@@ -170,7 +170,7 @@ const SharedNavbar = () => {
             </div>
             <div className="flex items-end gap-6">
               {[
-                { name: "Instagram", href: "https://www.instagram.com/cubertodesign/" },
+                { name: "Instagram", href: "https://www.instagram.com/vestralogics/" },
                 { name: "Email", href: "mailto:info@vestra.com" },
               ].map((s) => (
                 <a

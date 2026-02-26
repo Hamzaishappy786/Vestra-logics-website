@@ -4,7 +4,6 @@ import SplitShow from "@/components/sections/SplitShow";
 import Stats from "@/components/sections/Stats";
 import AwwwardsSection from "@/components/sections/Awwwards";
 import Partners from "@/components/sections/Partners";
-import Testimonials from "@/components/sections/Testimonials";
 import Benefits from "@/components/sections/Benefits";
 import AboutHistory from "@/components/sections/AboutHistory";
 import OutroCTA from "@/components/sections/OutroCTA";
@@ -19,7 +18,6 @@ export default function AboutPage() {
       <Stats />
       <AwwwardsSection />
       <Partners />
-      <Testimonials />
       <Benefits />
       <AboutHistory />
       <OutroCTA />

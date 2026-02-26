@@ -4,7 +4,7 @@ import React from 'react';
 import { Instagram, Youtube, Github, Facebook, Dribbble } from 'lucide-react';
 
 /**
- * Footer component cloned from Cuberto's design.
+ * Footer component cloned from Vestra's design.
  * Features:
  * - Dark theme with white/gray text.
  * - Office addresses with pill-style CTA links.
@@ -14,12 +14,11 @@ import { Instagram, Youtube, Github, Facebook, Dribbble } from 'lucide-react';
  */
 const Footer = () => {
   const socialIcons = [
-    { Icon: Instagram, href: "https://www.instagram.com/cubertodesign/" },
-    { Icon: Youtube, href: "https://www.youtube.com/channel/UCzestFrXpwSGCfcbO2pObwQ" },
-    { Icon: Github, href: "https://github.com/Cuberto" },
-    { Icon: Facebook, href: "https://www.facebook.com/Cuberto.design/" },
-    { Icon: Dribbble, href: "https://dribbble.com/cuberto" },
-    { Icon: Dribbble, href: "https://www.behance.net/cuberto" },
+    { Icon: Instagram, href: "https://www.instagram.com/vestralogics/" },
+    { Icon: Youtube, href: "https://www.youtube.com/vestra" },
+    { Icon: Github, href: "https://github.com/vestra" },
+    { Icon: Facebook, href: "https://www.facebook.com/vestra" },
+    { Icon: Dribbble, href: "https://dribbble.com/vestra" },
   ];
 
   return (
@@ -34,43 +33,28 @@ const Footer = () => {
             <address className="not-italic">
               <div className="mb-6">
                 <a
-                  href="mailto:info@cuberto.com"
+                  href="mailto:info@vestra.com"
                   className="inline-flex items-center justify-center px-8 py-3 rounded-full border border-white/20 text-lg font-medium transition-all duration-300 hover:bg-white hover:text-black"
                 >
-                  info@cuberto.com
+                  info@vestra.com
                 </a>
               </div>
               <div className="text-[14px] uppercase tracking-wider text-[#9B9B9B] mb-2">Main office</div>
               <div className="text-[18px] leading-relaxed text-[#FFFFFF]">
-                901 N Pitt Street<br />
-                Alexandria VA, 22314
+                Faisalabad,<br />
+                Pakistan
               </div>
             </address>
 
             {/* Second Office */}
-            <address className="not-italic">
-              <div className="mb-6">
-                <a
-                  href="tel:+13015499309"
-                  className="inline-flex items-center justify-center px-8 py-3 rounded-full border border-white/20 text-lg font-medium transition-all duration-300 hover:bg-white hover:text-black"
-                >
-                  +1 301 549 9309
-                </a>
-              </div>
-              <div className="text-[14px] uppercase tracking-wider text-[#9B9B9B] mb-2">Second office</div>
-              <div className="text-[18px] leading-relaxed text-[#FFFFFF]">
-                Na Perstyne<br />
-                342/1, 11000 Prague
-              </div>
-            </address>
+            {/* Second Office Placeholder or Hidden */}
           </div>
 
           {/* Right Column: Navigation Links */}
           <div className="grid grid-cols-2 gap-x-12 gap-y-4 md:gap-x-20">
             <a href="/services/" className="text-[28px] font-medium hover:opacity-70 transition-opacity">Services</a>
-            <a href="/blog/" className="text-[28px] font-medium hover:opacity-70 transition-opacity">Blog</a>
             <a href="/projects/" className="text-[28px] font-medium hover:opacity-70 transition-opacity">Projects</a>
-            <a href="https://hello.cuberto.com/" className="text-[28px] font-medium hover:opacity-70 transition-opacity">Workflow</a>
+            <a href="https://hello.vestra.com/" className="text-[28px] font-medium hover:opacity-70 transition-opacity">Workflow</a>
             <a href="/about/" className="text-[28px] font-medium hover:opacity-70 transition-opacity">Company</a>
             <a href="/contacts/" className="text-[28px] font-medium hover:opacity-70 transition-opacity">Contacts</a>
           </div>

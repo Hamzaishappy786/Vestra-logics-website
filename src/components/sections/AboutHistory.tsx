@@ -4,14 +4,14 @@ import React from 'react';
 
 const AboutHistory: React.FC = () => {
   return (
-    <section 
+    <section
       className="cb-overview py-[150px] md:py-[200px] bg-background text-foreground"
       id="history"
     >
       <div className="container overflow-hidden">
         {/* Large Headline */}
         <div className="mb-[60px] md:mb-[80px]">
-          <h2 
+          <h2
             className="text-[clamp(48px,8vw,100px)] leading-[1] font-medium tracking-[-0.04em] mb-10"
             aria-label="Get to know us, see what's up"
           >
@@ -19,7 +19,7 @@ const AboutHistory: React.FC = () => {
             <br />
             <span>see what's up</span>
           </h2>
-          
+
           {/* Section Divider */}
           <div className="w-full h-[1px] bg-border mt-10" />
         </div>
@@ -37,12 +37,12 @@ const AboutHistory: React.FC = () => {
           <div className="md:col-span-2 max-w-[800px]">
             <div className="space-y-12">
               <p className="text-[clamp(18px,2.2vw,28px)] leading-[1.4] font-normal">
-                Two brothers, Roman and Dmitri, founded the company in 2010. Initially, we were a small boutique studio developing designs for sites and mobile applications.
+                Two brothers, Hanzla and Bilal, founded the company in 2025. Starting as a dedicated team of freelancers specializing in web and mobile design, we have since evolved to embrace the forefront of artificial intelligence. Today, we focus on developing AI-powered applications, Large Language Models (LLMs), and cutting-edge digital solutions.
               </p>
-              
+
               <div className="text-[clamp(18px,2.2vw,28px)] leading-[1.4] font-normal space-y-8">
                 <p>
-                  Today, Cuberto has grown to a full-cycle agency with attested design expertise. We are the Awwwards Agency of the Year, are in the TOP 10 design agencies according to the most popular design communities in the world, receive international awards for our exceptional products, work with large companies all over the world, teach our own design courses, and gladly share our expertise with you.
+                  Today, Vestra has grown to a full-cycle agency with attested design expertise. We are in the TOP 10 design agencies according to the most popular design communities in the world, receive international awards for our exceptional products, work with large companies all over the world, teach our own design courses, and gladly share our expertise with you.
                 </p>
               </div>
             </div>

@@ -30,7 +30,7 @@ const Stats = () => {
             {/* Description Text */}
             <div className="mb-16 lg:mb-24">
               <p className="text-[20px] md:text-[24px] lg:text-[28px] leading-[1.4] text-black mb-10">
-                We make things, and we're awesome at it. Cuberto is a tight-knit team of experts who are ready to tackle the most intricate puzzles when it comes to websites and mobile apps development. We love what we do and we bet on the success of each and every project we undertake.
+                We make things, and we're awesome at it. Vestra is a tight-knit team of experts who are ready to tackle the most intricate puzzles when it comes to websites and mobile apps development. We love what we do and we bet on the success of each and every project we undertake.
               </p>
               <p className="text-[20px] md:text-[24px] lg:text-[28px] leading-[1.4] text-black">
                 Mainstream? No, thanks. Because it's not just work, it's passion. It's not just clients, it's people. Every project we take on is important to us, and every client is a big deal. We take care of your projects, your deadlines, and your nerves no matter what, and that’s a promise.
@@ -57,14 +57,6 @@ const Stats = () => {
                 <span className="text-[14px] font-bold uppercase tracking-[0.05em] text-black mt-4">completed projects</span>
               </div>
 
-              {/* Stat Item 3 */}
-              <div className="flex flex-col">
-                <div className="flex items-baseline">
-                  <span className="text-[40px] md:text-[54px] lg:text-[64px] font-medium leading-none text-black">15</span>
-                  <span className="text-[20px] md:text-[24px] lg:text-[28px] font-medium leading-none text-black ml-2">years</span>
-                </div>
-                <span className="text-[14px] font-bold uppercase tracking-[0.05em] text-black mt-4">of experience</span>
-              </div>
             </div>
           </div>
         </div>
