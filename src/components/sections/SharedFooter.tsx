@@ -49,7 +49,6 @@ const SharedFooter = () => {
             {[
               { label: "Services", href: "/services" },
               { label: "Projects", href: "/projects" },
-              { label: "Workflow", href: "#" },
               { label: "Company", href: "/about" },
               { label: "Contacts", href: "/contacts" },
             ].map((link) => (

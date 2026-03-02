@@ -47,15 +47,14 @@ const ShowreelSection = () => {
         style={{ padding: "0 5%" }}
       >
         <div className="cb-preview-container max-w-[1440px] mx-auto py-20 lg:py-40">
-          <div 
+          <div
             className="cb-preview-main relative cursor-none group"
             style={{ borderRadius: "2.5rem", overflow: "hidden" }}
           >
             {/* Custom Play Cursor */}
             <div
-              className={`fixed pointer-events-none z-50 flex items-center justify-center transition-transform duration-300 ease-out bg-black rounded-full text-white font-medium text-sm tracking-tight ${
-                isHovering ? "scale-100" : "scale-0"
-              }`}
+              className={`fixed pointer-events-none z-50 flex items-center justify-center transition-transform duration-300 ease-out bg-black rounded-full text-white font-medium text-sm tracking-tight ${isHovering ? "scale-100" : "scale-0"
+                }`}
               style={{
                 left: cursorPos.x + (containerRef.current?.getBoundingClientRect().left || 0),
                 top: cursorPos.y + (containerRef.current?.getBoundingClientRect().top || 0),
@@ -76,8 +75,7 @@ const ShowreelSection = () => {
                 playsInline
                 className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
               >
-                <source src="https://cuberto.com/assets/showreel/short.mp4" type="video/mp4" />
-                <source src="https://cuberto.com/assets/showreel/short-sm.mp4" type="video/mp4" />
+                <source src="/showreel_trimmed.mp4" type="video/mp4" />
               </video>
             </div>
           </div>
@@ -86,12 +84,12 @@ const ShowreelSection = () => {
 
       {/* Video Modal */}
       {isModalOpen && (
-        <div 
+        <div
           className="fixed inset-0 z-[100] flex items-center justify-center bg-white"
           style={{ animation: "fadeIn 0.5s cubic-bezier(0.19, 1, 0.22, 1) forwards" }}
         >
           {/* Close button Area / Custom Close Cursor */}
-          <button 
+          <button
             onClick={toggleModal}
             className="absolute top-8 right-8 z-[110] p-4 bg-black rounded-full text-white hover:scale-110 transition-transform"
           >
@@ -105,8 +103,7 @@ const ShowreelSection = () => {
                 controls
                 className="w-full h-full object-contain"
               >
-                <source src="https://cuberto.com/assets/showreel/full-1440-60.mp4" type="video/mp4" />
-                <source src="https://cuberto.com/assets/showreel/full-1080-60.mp4" type="video/mp4" />
+                <source src="/showreel_trimmed.mp4" type="video/mp4" />
               </video>
             </div>
           </div>

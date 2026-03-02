@@ -3,6 +3,7 @@
 import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import { Home } from "lucide-react";
 import { cn } from "@/lib/utils";
 
 const VestraLogo = () => (
@@ -97,17 +98,27 @@ const SharedNavbar = () => {
                     )}
                   </Link>
                 ))}
+                <Link
+                  href="/"
+                  className={cn(
+                    "relative h-[20px] flex items-center text-[15px] font-medium text-black/70 hover:text-black transition-all duration-300 px-2 hover:invert hover:bg-black rounded-sm",
+                    isActive("/") && "text-black"
+                  )}
+                  aria-label="Home"
+                >
+                  <Home size={18} />
+                </Link>
               </nav>
 
               <button
                 onClick={() => setIsOpen(!isOpen)}
-                className="flex items-center gap-3 group relative z-[101]"
+                className="flex items-center gap-3 group relative z-[101] hover:scale-105 transition-transform duration-300"
                 aria-label="Toggle menu"
               >
-                <span className="text-[13px] font-medium uppercase tracking-widest hidden sm:block">
+                <span className="text-[13px] font-medium uppercase tracking-widest hidden sm:block group-hover:tracking-[0.2em] transition-all duration-300">
                   Menu
                 </span>
-                <div className="flex flex-col justify-center items-end w-8 h-8 gap-1.5">
+                <div className="flex flex-col justify-center items-end w-8 h-8 gap-1.5 group-hover:translate-x-1 transition-transform duration-300">
                   <span
                     className={cn(
                       "block h-[2px] bg-black transition-all duration-300",
@@ -130,7 +141,7 @@ const SharedNavbar = () => {
       {/* Fullscreen Overlay Menu */}
       <div
         className={cn(
-          "fixed inset-0 bg-white z-[99] transition-transform duration-700 ease-[cubic-bezier(0.19,1,0.22,1)]",
+          "fixed inset-0 bg-white z-[99] transition-transform duration-700 ease-[cubic-bezier(0.19,1,0.22,1)] overflow-y-auto",
           isOpen ? "translate-y-0" : "-translate-y-full invisible pointer-events-none"
         )}
       >

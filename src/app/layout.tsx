@@ -7,6 +7,9 @@ import StickyContactWidget from "@/components/sections/sticky-contact-widget";
 export const metadata: Metadata = {
   title: "Vestra Logics — Design Agency",
   description: "Design agency focused on AI-driven products. Creating memorable websites and digital products since 2025.",
+  icons: {
+    icon: "/logo.jpg",
+  },
 };
 
 export default function RootLayout({
